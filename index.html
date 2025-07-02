@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>초등학교 시간표</title>
+    <style>
+      body {
+        font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      table {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        border-collapse: separate; /* 둥근 테두리 적용을 위해 separate 사용 */
+        border-spacing: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border-radius: 16px; /* 전체 테두리 둥글게 */
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 14px;
+        text-align: center;
+        font-size: 17px;
+      }
+
+      th {
+        background-color: #f0f0f0;
+        color: #444;
+        font-weight: 600;
+      }
+
+      td {
+        color: #333;
+        background-color: #fff;
+      }
+
+      .subject {
+        border-radius: 8px;
+        padding: 6px 8px;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* 파스텔톤 색상 */
+      .국어 {
+        background-color: #fde2e2;
+      }
+      .수학 {
+        background-color: #e0f7fa;
+      }
+      .과학 {
+        background-color: #e6f4ea;
+      }
+      .사회 {
+        background-color: #fff0d6;
+      }
+      .영어 {
+        background-color: #e3f0ff;
+      }
+      .미술 {
+        background-color: #f3e5f5;
+      }
+      .체육 {
+        background-color: #fff3e0;
+      }
+      .음악 {
+        background-color: #fff9c4;
+      }
+      .점심 {
+        background-color: #f9f9f9;
+        font-weight: bold;
+      }
+
+      .empty {
+        background-color: #fafafa;
+      }
+
+      /* 둥근 모서리 처리 */
+      th:first-child {
+        border-top-left-radius: 16px;
+      }
+      th:last-child {
+        border-top-right-radius: 16px;
+      }
+      tr:last-child td:first-child {
+        border-bottom-left-radius: 16px;
+      }
+      tr:last-child td:last-child {
+        border-bottom-right-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>📚 4학년 1반 시간표</h1>
+
+    <table>
+      <tr>
+        <th>시간 / 요일</th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+      <tr>
+        <td>1교시</td>
+        <td><div class="subject 국어">국어</div></td>
+        <td><div class="subject 수학">수학</div></td>
+        <td><div class="subject 사회">사회</div></td>
+        <td><div class="subject 영어">영어</div></td>
+        <td><div class="subject 과학">과학</div></td>
+      </tr>
+      <tr>
+        <td>2교시</td>
+        <td><div class="subject 수학">수학</div></td>
+        <td><div class="subject 국어">국어</div></td>
+        <td><div class="subject 과학">과학</div></td>
+        <td><div class="subject 국어">국어</div></td>
+        <td><div class="subject 사회">사회</div></td>
+      </tr>
+      <tr>
+        <td>3교시</td>
+        <td><div class="subject 체육">체육</div></td>
+        <td><div class="subject 미술">미술</div></td>
+        <td><div class="subject 음악">음악</div></td>
+        <td><div class="subject 체육">체육</div></td>
+        <td><div class="subject 음악">음악</div></td>
+      </tr>
+      <tr>
+        <td>점심시간</td>
+        <td colspan="5" class="점심">🍽️ 점심시간</td>
+      </tr>
+      <tr>
+        <td>4교시</td>
+        <td><div class="subject 영어">영어</div></td>
+        <td><div class="subject 수학">수학</div></td>
+        <td><div class="subject 국어">국어</div></td>
+        <td><div class="subject 미술">미술</div></td>
+        <td><div class="subject 과학">과학</div></td>
+      </tr>
+      <tr>
+        <td>5교시</td>
+        <td><div class="subject 사회">사회</div></td>
+        <td><div class="subject 체육">체육</div></td>
+        <td><div class="subject 미술">미술</div></td>
+        <td><div class="subject 과학">과학</div></td>
+        <td><div class="subject 국어">국어</div></td>
+      </tr>
+      <tr>
+        <td>6교시</td>
+        <td><div class="subject 미술">미술</div></td>
+        <td><div class="subject 음악">음악</div></td>
+        <td class="empty"></td>
+        <td><div class="subject 사회">사회</div></td>
+        <td class="empty"></td>
+      </tr>
+    </table>
+  </body>
+</html>
